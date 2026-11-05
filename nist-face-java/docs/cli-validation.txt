@@ -1,0 +1,11 @@
+Type-1 offset=0 LEN=168
+Type-2 offset=168 LEN=42
+Type-10 offset=210 LEN=3542
+PASS (implemented subset): 32x40, PNG, RGB, SAP=0
+Image SHA-256: a87d9b90793b1c3a9cb74810d5bb4ac1cd134bcebbd3cd72383e20f7e8dc7698
+Original PNG: byte-for-byte identical
+Type-1: offset=0 LEN=168
+Type-2: offset=168 LEN=42
+PNG SHA-256: a87d9b90793b1c3a9cb74810d5bb4ac1cd134bcebbd3cd72383e20f7e8dc7698
+Type-10: offset=210 LEN=3542
+PASS: independent structural and byte-preservation checks

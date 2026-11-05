@@ -1,0 +1,69 @@
+PASS RGB round trip preserves every PNG byte
+PASS All LENs include tags and terminal FS
+PASS VER, CNT, NSR/NTR and cross-reference
+PASS PNG containing all NIST separators and fake tags
+PASS Grayscale 8-bit
+PASS Grayscale 16-bit preserved
+PASS sRGB chunk reported as SRGB
+PASS Type-2 structured items and subfields
+PASS Type-2 high field number and no implicit demographic schema
+PASS Minimal Type-2 header
+PASS LEN fixed point over decimal boundaries
+PASS Deterministic conversion
+PASS Defensive copies in validation result
+PASS Optional domain version
+PASS Non-square pixel ratio
+PASS Equal physical scales
+PASS Reject PNG CRC corruption
+PASS Reject non-PNG source
+PASS Reject truncated PNG
+PASS Reject trailing PNG bytes
+PASS Reject PNG size bomb before raster allocation
+PASS Reject unsupported dimensions
+PASS Reject animated PNG
+PASS Reject unknown critical chunk
+PASS Reject palette in preserve mode
+PASS Explicit palette normalization
+PASS Opaque alpha normalization
+PASS Reject actual transparency even in normalize mode
+PASS RGB 16-bit preserved without quantization
+PASS Reject subtle 16-bit alpha rounded to 255 by getRGB
+PASS Reject non-ASCII rather than replacing characters
+PASS Reject GS injection
+PASS Reject FS injection
+PASS Reject US injection into scalar metadata
+PASS Reject reserved Type-2 field
+PASS Reject aliases for same Type-2 field
+PASS Reject unknown properties
+PASS Reject invalid date
+PASS Accept leap date
+PASS Reject invalid TOT
+PASS Reject unequal physical scales
+PASS Reject missing mandatory metadata
+PASS Reject duplicate property lines
+PASS Reject truncated transaction
+PASS Reject bytes after transaction
+PASS Reject wrong version
+PASS Reject CNT total-record off-by-one
+PASS Reject image IDC mismatch
+PASS Reject broken Type-2 cross-reference
+PASS Reject wrong image dimensions
+PASS Reject wrong CGA
+PASS Reject incorrect CSP
+PASS Reject unverified SAP upgrade
+PASS Reject duplicate field number
+PASS Reject missing mandatory field
+PASS Reject malformed field tag
+PASS Reject invalid embedded PNG
+PASS Reject length off by one
+Created 3729 bytes; types 1, 2, 10; VER=0502; SAP=0
+Type-1 offset=0 LEN=168
+Type-2 offset=168 LEN=42
+Type-10 offset=210 LEN=3519
+PASS (implemented subset): 32x40, PNG, RGB, SAP=0
+Image SHA-256: 844ee1306cbd55231a99f587281f47f2d7e736eec5d5dc9cecec37e1d4f492e7
+Original PNG: byte-for-byte identical
+PASS CLI conversion, source comparison, extraction, no overwrite
+PASS Read independently encoded reference fixture
+ALL 60 TESTS PASSED
+Built build/nist-face.jar
